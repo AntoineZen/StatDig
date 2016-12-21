@@ -12,12 +12,12 @@ wc = pi/2;
 h_n =  sin((n - nd) * wc) ./ ((n-nd) * 2*wc);
 h_n(nd) = .5;
 
-plot(n, h_n);
+%plot(n, h_n);
 
 % Padé aproximation paramters
 p = 2;
 
-q = 21-p;
+q = 20-p-1;
 
 % Do the padé aproximation to compute the a and b coef.
 [a,b] = pade(h_n,p,q);
